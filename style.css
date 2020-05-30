@@ -1,0 +1,245 @@
+  .title{
+    color: blueviolet;
+    font-family: cursive;
+  }
+  .div {
+    background-color: white;
+    background-image: radial-gradient(#9ed8d3 3px, transparent 3px);
+    background-size: 30px 30px;
+    }
+  .body1{
+    color: blue;
+    font-family: 'Lobster', cursive;
+  }
+  .body2{
+    font-family: 'Russo One', sans-serif;
+    color: blue;
+  }
+  .text-block{
+    margin-left:20px;
+  }
+  .img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+  }
+  .amg{
+    display: block;
+    max-width: 30%;
+    max-height: 30%;
+    border: 1px solid #333;
+    alt: inherit;
+  }
+  .osn{
+    display: block;
+    max-width: 30%;
+    max-height: 30%;
+    border: 1px solid #333;
+    alt: inherit;
+  }
+  
+
+  .text {
+      color:black;
+      margin-left:50px;
+      font-size:175%;
+  }
+  .text-test {
+    margin-right:150px;
+    color:black;
+    margin-left:150px;
+    font-size:175%;
+  }
+
+  
+  #conteiner{
+    width:10000px;
+    height:auto;
+    margin:0px auto;
+    padding-top:10px;
+}
+#menu1{
+    position:relative;
+    display:block;
+    width:100%;
+    height:auto;
+    z-index:10;
+}
+    #menu1 ul{
+        position:relative;
+        display:block;
+        margin:0px;
+        padding:10px;
+        width:98,5%;
+        height:auto;
+        list-style:none;
+        background:rgb(0, 0, 0);
+        text-shadow: red 0 0 10px; /* Свечение красного цвета */
+        opacity: .7;
+        box-shadow:0 0 20px rgb(3, 0, 0);
+    }
+    #menu1 > ul{
+        text-align:justify;
+        font-size:10px;
+        line-height:1px;
+    }
+    #menu1 > ul::after{
+        display:inline-block;
+        width:100%;
+        height:0px;
+        content:" ";
+    }
+        #menu1 ul li{
+            position:relative;
+            display:inline-block;
+            width:auto;
+            height:auto;
+            vertical-align:top;
+            text-align:left;
+        }
+        #menu1 ul li.razd{
+            height:28px;
+            width:1px;
+            background:#000000;
+            margin-top:4px;
+        }
+            #menu1 ul li a{
+                display:block;
+                padding:9px 45px 0px 45px;
+                font-size:14px;
+                font-family:Arial, sans-serif;
+                color:#ffffef;
+                text-shadow: red 0 0 10px; /* Свечение красного цвета */
+                line-height:1.3em;
+                text-decoration:none;
+                font-weight:bold;
+                text-transform:uppercase;
+                height:36px;
+                box-sizing:border-box;
+            }
+            #menu1 ul li > a:hover, #menu1 ul li:hover > a{
+                background:rgb(0, 0, 0);
+                text-shadow: #5dc8e5 0 0 10px; /* Свечение голубого цвета */
+                color: #00eeff;
+            }
+            #menu1 ul li ul{
+                position:absolute;
+                top:35px;
+                left:0px;
+                display:none;
+                width:auto;
+                background:rgb(0, 0, 0);
+                opacity: .9;
+                white-space:nowrap;
+            }
+            #menu1 > ul > li:last-child > ul{/*последний пункт будет прикреплен по правому краю*/
+                left:auto;
+                right:0px;
+            }
+            #menu1 ul li:hover > ul{display:block;}/*эта строчка реализует механизм выпадения*/
+                #menu1 ul li ul li{
+                    display:block;
+                    width:auto;
+                }
+                    #menu1 ul li ul li a{
+                        display:block;
+                        text-transform:none;
+                        height:auto;
+                        padding:7px 45px;
+                        width:100%;
+                        box-sizing:border-box;
+                        border-top:1px solid #ffffff;
+                    }
+                    #menu1 ul li ul li:first-child > a{border-top:0px;}
+                    #menu1 ul li ul li a:hover, #menu1 ul li ul li:hover > a{
+                        background:rgb(0, 0, 0);
+                        color:rgb(5, 217, 255);
+                    }
+                #menu1 ul li ul li ul{
+                    top:0px;
+                    left:100%;
+                    display:none;
+                    background:#000000;
+                }
+                #menu1 > ul > li:last-child > ul ul{left:auto; right:100%;}
+                    #menu1 ul li ul li ul a{color:rgb(252, 252, 252);}
+                    * {box-sizing: border-box;}
+.product-item {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 10px 5px 10px;
+  border: 1px solid #eee;
+  background: white;
+  font-family: "Open Sans";
+  overflow: hidden;
+  transition: .4s linear;
+}
+.product-img {transition: 1s ease-in-out;}
+.product-img:hover {transform: scale(1.1);}
+.product-img img {
+  display: block;
+  width: 100%;
+}
+.product-list {margin-top: 15px;}
+.product-list h3 {
+  font-weight: 700;
+  color: #39404B;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 2;
+}
+.price {
+  color: #E34D38;
+  display: block;
+  margin-bottom: 12px;
+}
+.stars {
+  height: 14px;
+  line-height: 14px;
+  margin: 7px 0;
+}
+.stars:before {
+  content: "\f005\f005\f005\f005\f006";
+  color: #EFB71C;
+  font-size: 14px;
+  font-family: FontAwesome;
+}
+.actions {
+  border-top: 1px solid #eee;
+  padding-top: 4px;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+}
+.actions:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.add-to-cart, .add-to-links {float: left;}
+.cart-button {
+  text-decoration: none;
+  color: #8C877C;
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+  transition: .4s linear;
+}
+.cart-button:before {
+  content: "\f07a";
+  font-family: FontAwesome;
+  margin-right: 10px;
+}
+.add-to-cart:hover .cart-button, .wishlist:hover, .compare:hover {color: #E34D38;}
+.wishlist, .compare {
+  color: #8C877C;
+  padding-left: 20px;
+  transition: .4s linear;
+}
+.wishlist:after, .compare:after {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 13px;
+}
+.wishlist:after {content: "\f004";}
+ .compare:after {content: "\f079";}
